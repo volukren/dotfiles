@@ -15,9 +15,8 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 
 map <F5> :!./%< <CR>
-map <F8> :%!~/dev/my/cp-book/auto-fix/autofix ~/dev/my/cp-book/auto-fix/include.txt<CR><CR> :w<CR> :!g++ -std=c++17 -Wall -Wshadow -Wextra -DLOCAL -o %< % -fsanitize=undefined -fsanitize=address -D__GLIBCXX_DEBUG <CR>
-map <F9> :%!~/dev/my/cp-book/auto-fix/autofix ~/dev/my/cp-book/auto-fix/include.txt<CR><CR> :w<CR> :!g++ -std=c++17 -Wall -Wshadow -Wextra -DLOCAL -O2 -o %< % <CR> 
-map <F2> :%!~/dev/my/cp-book/auto-fix/autofix ~/dev/my/cp-book/auto-fix/include.txt<CR><CR>
+map <F8> :!g++ -std=c++17 -Wall -Wshadow -Wextra -DLOCAL -o %< % -fsanitize=undefined -fsanitize=address -D__GLIBCXX_DEBUG <CR>
+map <F9> :!g++ -std=c++17 -Wall -Wshadow -Wextra -DLOCAL -O2 -o %< % <CR> 
 
 au BufNewFile *.cc 0r ~/dev/my/cp-book/template.cpp
 
