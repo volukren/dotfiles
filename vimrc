@@ -25,6 +25,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'morhetz/gruvbox'
+Plugin 'sirver/ultisnips'
+Plugin 'tpope/vim-commentary'
 call vundle#end()
 filetype plugin indent on
 
