@@ -1,3 +1,4 @@
+filetype plugin indent on
 syntax on
 set number
 set expandtab 
@@ -13,6 +14,8 @@ set incsearch
 set hlsearch
 set backspace=indent,eol,start
 set clipboard=unnamed
+
+au filetype cpp nmap <F2> :!gdb %< <CR>
 
 map <F5> :!./%< <CR>
 map <F8> :!g++ -std=c++17 -I/Users/n/dev/my/cp-book/ -Wall -Wshadow -Wextra -DLOCAL -o %< % -fsanitize=undefined -fsanitize=address -D__GLIBCXX_DEBUG <CR>
@@ -30,5 +33,5 @@ Plugin 'tpope/vim-commentary'
 call vundle#end()
 filetype plugin indent on
 
-set bg=dark
-colo gruvbox
+set background=dark
+colorscheme gruvbox

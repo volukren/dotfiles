@@ -1,4 +1,6 @@
 
 export CLICOLOR=1
-PS1='%B%F{yellow}%n %F{white} %~ '
 
+export PS1='%n@%m %~ $ '
+
+export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"
